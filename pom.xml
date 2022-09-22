@@ -31,7 +31,12 @@
         </dependency>
         <dependency>
             <groupId>${project.groupId}</groupId>
-            <artifactId>com.tugalsan.api.file.xlsx</artifactId>
+            <artifactId>com.tugalsan.api.file.csv</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>com.tugalsan.api.file</artifactId>
             <version>${project.version}</version>
         </dependency>
         <dependency>
