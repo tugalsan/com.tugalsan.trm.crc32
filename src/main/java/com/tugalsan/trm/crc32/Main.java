@@ -1,6 +1,6 @@
 package com.tugalsan.trm.crc32;
 
-import com.tugalsan.api.desktop.server.TS_DesktopUtils;
+import com.tugalsan.api.desktop.server.TS_DesktopPathUtils;
 import com.tugalsan.api.file.csv.server.TS_FileCsvUtils;
 import com.tugalsan.api.file.server.TS_DirectoryUtils;
 import com.tugalsan.api.file.server.TS_FileUtils;
@@ -10,9 +10,9 @@ import java.nio.file.Path;
 public class Main {
 
     public static void main(String... args) {
-        var folder = TS_DesktopUtils.chooseFolder(Path.of("C:\\Program Files\\SOLIDWORKS Corp"));
+        var folder = TS_DesktopPathUtils.chooseFolder(Path.of("C:\\Program Files\\SOLIDWORKS Corp"));
         if (folder == null) {
-            TS_DesktopUtils.info("folder == null -> exit;");
+            TS_DesktopPathUtils.info("folder == null -> exit;");
             System.exit(1);
             return;
         }
@@ -34,7 +34,7 @@ public class Main {
                 });
         TS_FileCsvUtils.toFile(table, output, true);
 
-        TS_DesktopUtils.info("See " + output.toString());
+        TS_DesktopPathUtils.info("See " + output.toString());
         System.exit(0);
     }
 }
