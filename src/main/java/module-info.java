@@ -6,7 +6,7 @@ module com.tugalsan.trm.crc32 {
     requires com.tugalsan.api.list;
     requires com.tugalsan.api.time;
     requires com.tugalsan.api.cast;
-    requires com.tugalsan.api.executable;
+    requires com.tugalsan.api.runnable;
     requires com.tugalsan.api.shape;
     requires com.tugalsan.api.file;
     requires com.tugalsan.api.file.csv;
