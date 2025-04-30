@@ -27,7 +27,7 @@ public class Main {
                 .forEach(file -> {
                     var create = TS_FileUtils.getTimeCreationTime(file);
                     var modified = TS_FileUtils.getTimeLastModified(file);
-                    table.setValue(
+                    table.setValues(
                             table.getRowSize(),
                             String.valueOf(TS_FileUtils.getChecksumHex(file)),
                             create == null ? "null" : create.toString_dateOnly(),
